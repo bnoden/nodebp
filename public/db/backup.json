@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Mario",
+    "quotes": [
+      {
+        "id": 1,
+        "quote": "It's a me, Mario!"
+      },
+      {
+        "id": 2,
+        "quote": "Let's-a-go!"
+      },
+      {
+        "id": 3,
+        "quote": "Yipeeeeeee!"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "John McLane",
+    "quotes": [
+      {
+        "id": 4,
+        "quote": "Yipee-kaye, Mother Fucker!"
+      },
+      {
+        "id": 5,
+        "quote": "Awww, no bullets!"
+      },
+      {
+        "id": 6,
+        "quote": "Come out to the coast, we'll get together, have a few laughs..."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Arnold Schwarzenegger",
+    "quotes": [
+      {
+        "id": 7,
+        "quote": "I'll be back."
+      },
+      {
+        "id": 8,
+        "quote": "Hasta la vista, baby."
+      },
+      {
+        "id": 9,
+        "quote": "It's not a tumor!"
+      }
+    ]
+  }
+]

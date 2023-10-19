@@ -1,0 +1,37 @@
+#container {
+  width: 160px;
+}
+
+.btn {
+  background: #4F71A8;
+  color: #fdfdff;
+  width: 60px;
+  padding: 4px;
+  border-radius: 4px;
+}
+.btn:hover {
+  cursor: pointer;
+  background: #B6C4DB;
+}
+
+#selectionInput {
+  height: 20px;
+  width: 140px;
+  font-size: 20px;
+  padding: 4px;
+  margin: 4px 0 4px;
+  border-radius: 4px;
+  border-width: 0px;
+  background: #CCE8D0;
+  color: #000000
+}
+
+option {
+  color: #000000
+}
+
+#characterForm {
+  background: #E4E8F0;
+  padding: 6px;
+  border-radius: 4px;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "nodebp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "browserify app.js bundle.js"
+  },
+  "author": "bnoden",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
