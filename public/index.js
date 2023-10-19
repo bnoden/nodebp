@@ -89,27 +89,6 @@ quoteButton.addEventListener("click", e =>{
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Brandon's old code */
 
 // const getAll = require('./components/GetAll');
