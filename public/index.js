@@ -28,7 +28,7 @@ let NUMBER_OF_CHARACTERS;
 
     console.log('characterList', characterList);
 
-    //selectionInput.focus();
+    selectionInput.focus();
   };
 
   request.send();
@@ -41,14 +41,7 @@ let NUMBER_OF_CHARACTERS;
     let quoteList = currentCharacter.quotes;
     let index = getQuoteIndex();
     if (quoteList.length > 0) {
-      for (let i = 0; i <= quoteList.length; i++) {
-        if (i === quoteList.length) {
-          i = 0;
-        }
-
-        setQuoteIndex(i);
-      }
-      quoteBox.innerHTML = quoteList[quoteIndex];
+      quoteBox.innerHTML = quoteList[index];
     }
   };
 
