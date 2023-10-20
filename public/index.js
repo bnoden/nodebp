@@ -1,5 +1,5 @@
 
-let characterData = [];
+let characterData = {};
 
 fetch('http://localhost:8080/persona/characters', {
   method: 'GET', // This is the default method, so you can omit it.
@@ -18,28 +18,30 @@ fetch('http://localhost:8080/persona/characters', {
   .then(data => {
     console.log(data); // Do something with the JSON data.
     characterData = data;
-    let currentCharacter = characterData[0];
+    const characterIdList = Object.keys(characterData);
+    let currentCharacter = characterData[characterIdList[0]];
     console.log(currentCharacter);
     let currentQuoteList = currentCharacter.quotes;
     let characterQuote = document.getElementById("character-quote");
     const quoteButton = document.getElementById("quote-button");
     const characterDropDown = document.getElementById('characterDropDown');
+    
 
-    for (let i in characterData) {
+    characterIdList.forEach(characterId => {
       let option = document.createElement("option");
 
-      option.setAttribute('value', characterData[i].id);
+      option.setAttribute('value', characterId);
 
-      let optionText = document.createTextNode(characterData[i].name);
+      let optionText = document.createTextNode(characterData[characterId].name);
 
       option.appendChild(optionText);
 
       characterDropDown.appendChild(option);
-    }
+    });
 
     characterDropDown.addEventListener('change', e => {
       let currentCharacterId = e.target.value;
-      currentCharacter = characterData[currentCharacterId - 1];
+      currentCharacter = characterData[currentCharacterId];
       document.getElementById('character-quote').innerHTML = "";
       currentQuoteList = currentCharacter.quotes;
       console.log(currentCharacter);
